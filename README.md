@@ -9,12 +9,25 @@ An Attempt to show 3D mesh images using Phonegap Build
 Feb 07, 2014
 
 IT WORKS!
+
 SEE THE FILE
-myGoo3d.html      Shows how to load a webpage with an object 3D mesh exported from Blender as a wavefront .obj file that also saves a .mtl file. Look great. Can use some basic touch commands to view it in 3D.
+
+myGoo3d.html     
+
+Shows how to load a webpage with an object 3D mesh exported from Blender as a wavefront .obj file that also saves a .mtl file. Look great. Can use some basic touch commands to view it in 3D.
+
+
+
+
+
+Just tested that you can load 2 3D frames in one App page. Looks good, amazing how fast it is. the touch comands are a bit sensitive. Also my Blender Camera is zoomed out too far, but that is a minor error.
+
+
+
+
 
 
 Below here are my notes while I was working on it.
-
 
 
 Sorry. Presently the Github code works, the problem is that the Webkit used by Phonegap does not refresh the page and you get a double 3D image as soon as you try to move it. 
