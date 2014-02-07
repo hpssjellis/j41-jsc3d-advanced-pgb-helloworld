@@ -23,8 +23,14 @@ Note: Do not use the suggested script from github but instead use something like
 </script>
 
 
-Will now try Google 3D at
+Google 3D version is at
 https://code.google.com/p/jsc3d/
+
+
+Of course this works perfectly. On window, touch commands work, sort of slow but successful. The only problem is that I do not know how to load my own .stl mesh objects onto the google site. will look into this more
+
+
+
 
 
 
