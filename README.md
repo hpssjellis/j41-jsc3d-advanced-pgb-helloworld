@@ -9,9 +9,9 @@ An Attempt to show 3D mesh images using Phonegap Build
 Feb 07, 2014 Still in testing mode
 
 
-Sorry. Presently the code works the problem is that the Webkit used by phonegap does not refresh the page and you get a double 3D image as soon as you try to move it. 
+Sorry. Presently the Github code works, the problem is that the Webkit used by Phonegap does not refresh the page and you get a double 3D image as soon as you try to move it. 
 
-Another issue is that you get the entire github page, which is less than ideal. I am sure things will change in the near future. I am going to try the same code with CCA (Chrome-cordova-app) to see if it works better. just github search cca-helloworld
+Another issue is that you get the entire github page, which is less than ideal. I am sure things will change in the near future. I am going to try the same code with CCA (Chrome-cordova-app) to see if it works better. Just search github for cca-helloworld
 
 
 
@@ -23,7 +23,11 @@ Note: Do not use the suggested script from github but instead use something like
 </script>
 
 
-The indexOk.html file has some other ways of doing things.
+Will now try Google 3D at
+https://code.google.com/p/jsc3d/
+
+
+
 
 
 
