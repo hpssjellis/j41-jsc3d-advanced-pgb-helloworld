@@ -25,7 +25,7 @@ The object file actually loads 2 files, a .obj file and a .mtl<br>
   
 <script type="text/javascript">
   var viewer = new JSC3D.Viewer(document.getElementById('cv'));
-  viewer.setParameter('SceneUrl',         'blenderExportWavefrontObj.obj');
+  viewer.setParameter('SceneUrl',         'blenderExportwavefrontObjC.obj');
   viewer.setParameter('ModelColor',       '#CAA618');
   viewer.setParameter('BackgroundColor1', '#E5D7BA');
   viewer.setParameter('BackgroundColor2', '#383840');
@@ -33,6 +33,7 @@ The object file actually loads 2 files, a .obj file and a .mtl<br>
   viewer.init();
   viewer.update();
 </script>
+        
         
         
 <br><br><br>Now lets try to load the same Blender object ssaved as a .stl 3d printer file<br><br><br>
@@ -65,7 +66,7 @@ The object file actually loads 2 files, a .obj file and a .mtl<br>
   
 <script type="text/javascript">
    var viewer3 = new JSC3D.Viewer(document.getElementById('cv3'));
-   viewer3.setParameter('SceneUrl',         '');
+   viewer3.setParameter('SceneUrl',         'blenderExport3dsC.3ds');
    viewer3.setParameter('ModelColor',       '#CAA618');
    viewer3.setParameter('BackgroundColor1', '#E5D7BA');
    viewer3.setParameter('BackgroundColor2', '#383840');
