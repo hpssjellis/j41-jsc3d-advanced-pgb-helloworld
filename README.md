@@ -11,12 +11,14 @@ Got .stl and .obj 3d formats working in a standalone Android App, meaning the 3D
 
 
 This App is amazing at displaying 3D graphics. It is small, lightweight and fast. The touch comands are a bit sensitive. 
-Note: 3D printing files do not contain the colour when exported from blender. Wavefront .obj files do save the colour probably in a .mtl file format
+Note: 3D printing files do not contain the colour when exported from blender. Wavefront .obj files do save the colour probably in a .mtl file format. Also the .min.js files did not work for me.
 
 
 
 Google jsc3d   version is at
 https://code.google.com/p/jsc3d/
+
+This was made by a fellow called Humu and is a very impressive set of javascript files.
 
 
 
