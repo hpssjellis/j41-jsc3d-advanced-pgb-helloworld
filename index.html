@@ -1,26 +1,65 @@
-<script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Getting Started with JSC3D</title>
+    </head>
+    <body>
+        <br><br><br> Blah, Blah, Blah <br><br><br>
+        
+        <canvas id="cv" width=600 height=480>
+        
+        
+        It seems you are using an outdated browser that does not support canvas :-(
+        </canvas>
+        <script type="text/javascript" src="jsc3d.min.js"></script>
+        <script type="text/javascript" src="jsc3d.touch.js"></script>
+     
+     
+     
+     	
+     
+        <script type="text/javascript">
+            var viewer = new JSC3D.Viewer(document.getElementById('cv'));
+            viewer.setParameter('SceneUrl',         'my_model.obj');
+            viewer.setParameter('ModelColor',       '#CAA618');
+            viewer.setParameter('BackgroundColor1', '#E5D7BA');
+            viewer.setParameter('BackgroundColor2', '#383840');
+            viewer.setParameter('RenderMode',       'flat');
+            viewer.init();
+            viewer.update();
+        </script>
+        
+        
+        
+          <br><br><br> Blah, Blah, Blah <br><br><br>
+            <br><br><br> Blah, Blah, Blah <br><br><br>
+              <br><br><br> Blah, Blah, Blah <br><br><br>
+                <br><br><br> Blah, Blah, Blah <br><br><br>
+                  <br><br><br> Blah, Blah, Blah <br><br><br>
+                    <br><br><br> Blah, Blah, Blah <br><br><br>
+                      <br><br><br> Blah, Blah, Blah <br><br><br>
+                        <br><br><br> Blah, Blah, Blah <br><br><br>
+                        
+                        
+        <canvas id="cv2" width=300 height=200>
+        It seems you are using an outdated browser that does not support canvas :-(
+        </canvas>
   
-function myShowGithub3D(){
-  this.location = 'https://github.com/hpssjellis/j-sdView-pgb-helloworld/blob/master/RugbyLineoutMaulYellow05.stl?overridemobile=true';
-  
-  }  
   
   
-    
-function myShowGoogle3D(){
-  this.location = 'http://jsc3d.googlecode.com/svn/trunk/jsc3d/demos/map3d.html?overridemobile=true';
-  
-  }  
-    
-function Google3DPage(){
-  this.location = 'myGoo3d.html';
-  
-  }  
-</script>
-
-
-
-
-<input type=button value="3D Github-bad" onclick="myShowGithub3D()"></input>
-<input type=button value="3D Google-OK" onclick="myShowGoogle3D()"></input>
-<input type=button value="3D Google jsc3d-Great" onclick="Google3DPage()"></input>
+        <script type="text/javascript">
+            var viewer2 = new JSC3D.Viewer(document.getElementById('cv2'));
+            viewer2.setParameter('SceneUrl',         'RugbyLineoutMaulYellow05.stl');
+            viewer2.setParameter('ModelColor',       '#CAA618');
+            viewer2.setParameter('BackgroundColor1', '#E5D7BA');
+            viewer2.setParameter('BackgroundColor2', '#383840');
+            viewer2.setParameter('RenderMode',       'flat');
+            viewer2.init();
+            viewer2.update();
+        </script>
+        
+        
+        
+        
+    </body>
+</html>
