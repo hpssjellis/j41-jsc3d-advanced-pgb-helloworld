@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>j-3D-View-pgb-helloworld</title>
+    <title>j-jsc3d-View-pgb-helloworld</title>
 </head>
 <body>
     
     
 
-<script type="text/javascript" src="http://jsc3d.googlecode.com/svn/trunk/jsc3d/jsc3d.js"></script>
-<script type="text/javascript" src="http://jsc3d.googlecode.com/svn/trunk/jsc3d/jsc3d.touch.js"></script> 
-<script type="text/javascript" src="http://jsc3d.googlecode.com/svn/trunk/jsc3d/jsc3d.3ds.js"></script>     
-    
-     
-     
-     
-     
+<script type="text/javascript" src="jsc3d/jsc3d.js"></script>
+<script type="text/javascript" src="jsc3d/jsc3d.touch.js"></script> 
+
+
      
 First lets load an object file saved from a simple Blender File.<br>
 The object file actually loads 2 files, a .obj file and a .mtl<br>
+This is the only one I could load that brought colours over from blender
 
         
 <canvas id="cv" width=400 height=300>
@@ -25,7 +22,7 @@ The object file actually loads 2 files, a .obj file and a .mtl<br>
   
 <script type="text/javascript">
   var viewer = new JSC3D.Viewer(document.getElementById('cv'));
-  viewer.setParameter('SceneUrl',         'blenderExportWavefrontObj.obj');
+  viewer.setParameter('SceneUrl',         'blenderExportwavefrontObjC.obj');
   viewer.setParameter('ModelColor',       '#CAA618');
   viewer.setParameter('BackgroundColor1', '#E5D7BA');
   viewer.setParameter('BackgroundColor2', '#383840');
@@ -35,7 +32,10 @@ The object file actually loads 2 files, a .obj file and a .mtl<br>
 </script>
         
         
-<br><br><br>Now lets try to load the same Blender object ssaved as a .stl 3d printer file<br><br><br>
+        
+<br><br><br>Now lets try to load the same Blender object ssaved as a .stl 3d printer file<br>
+Notice here that the colours were defined by this App.
+<br><br>
                         
 <canvas id="cv2" width=400 height=300>
    It seems you are using an outdated browser that does not support canvas :-(
@@ -57,23 +57,7 @@ The object file actually loads 2 files, a .obj file and a .mtl<br>
       
         
         
-  <br><br><br>Now lets try to load the same Blender object ssaved as a .3ds animation file<br><br><br>
-                        
-<canvas id="cv3" width=400 height=300>
-   It seems you are using an outdated browser that does not support canvas :-(
-</canvas>
-  
-<script type="text/javascript">
-   var viewer3 = new JSC3D.Viewer(document.getElementById('cv3'));
-   viewer3.setParameter('SceneUrl',         '');
-   viewer3.setParameter('ModelColor',       '#CAA618');
-   viewer3.setParameter('BackgroundColor1', '#E5D7BA');
-   viewer3.setParameter('BackgroundColor2', '#383840');
-   viewer3.setParameter('RenderMode',       'flat');
-   viewer3.init();
-   viewer3.update();
-</script>
-        
+
               
         
         
