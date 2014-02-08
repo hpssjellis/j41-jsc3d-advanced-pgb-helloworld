@@ -20,7 +20,7 @@ First lets load an object file saved from a simple Blender File.<br>
 The object file actually loads 2 files, a .obj file and a .mtl<br>
 
         
-<canvas id="cv" width=500 height=400>
+<canvas id="cv" width=400 height=300>
 </canvas>
   
 <script type="text/javascript">
@@ -37,13 +37,13 @@ The object file actually loads 2 files, a .obj file and a .mtl<br>
         
 <br><br><br>Now lets try to load the same Blender object ssaved as a .stl 3d printer file<br><br><br>
                         
-<canvas id="cv2" width=500 height=400>
+<canvas id="cv2" width=400 height=300>
    It seems you are using an outdated browser that does not support canvas :-(
 </canvas>
   
 <script type="text/javascript">
    var viewer2 = new JSC3D.Viewer(document.getElementById('cv2'));
-   viewer2.setParameter('SceneUrl',         'blenderExport3ds.3ds');
+   viewer2.setParameter('SceneUrl',         'blenderExportStl.stl');
    viewer2.setParameter('ModelColor',       '#CAA618');
    viewer2.setParameter('BackgroundColor1', '#E5D7BA');
    viewer2.setParameter('BackgroundColor2', '#383840');
@@ -59,13 +59,13 @@ The object file actually loads 2 files, a .obj file and a .mtl<br>
         
   <br><br><br>Now lets try to load the same Blender object ssaved as a .3ds animation file<br><br><br>
                         
-<canvas id="cv3" width=500 height=400>
+<canvas id="cv3" width=400 height=300>
    It seems you are using an outdated browser that does not support canvas :-(
 </canvas>
   
 <script type="text/javascript">
    var viewer3 = new JSC3D.Viewer(document.getElementById('cv3'));
-   viewer3.setParameter('SceneUrl',         'blenderExportStl.stl');
+   viewer3.setParameter('SceneUrl',         '');
    viewer3.setParameter('ModelColor',       '#CAA618');
    viewer3.setParameter('BackgroundColor1', '#E5D7BA');
    viewer3.setParameter('BackgroundColor2', '#383840');
