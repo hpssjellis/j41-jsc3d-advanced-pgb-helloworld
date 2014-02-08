@@ -1,65 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Getting Started with JSC3D</title>
-    </head>
-    <body>
-        <br><br><br> Blah, Blah, Blah <br><br><br>
-        
-        <canvas id="cv" width=600 height=480>
-        
-        
-        It seems you are using an outdated browser that does not support canvas :-(
-        </canvas>
-        <script type="text/javascript" src="jsc3d.min.js"></script>
-        <script type="text/javascript" src="jsc3d.touch.js"></script>
+<head>
+    <title>j-3D-View-pgb-helloworld</title>
+</head>
+<body>
+    
+<script type="text/javascript" src="jsc3d/jsc3d.min.js"></script>
+<script type="text/javascript" src="jsc3d/jsc3d.touch.js"></script>
+<script type="text/javascript" src="js3cd/jsc3d.3ds.js"></script>
+<script type="text/javascript" src="js3cd/jsc3d.console.js"></script>
      
      
      
-     	
      
-        <script type="text/javascript">
-            var viewer = new JSC3D.Viewer(document.getElementById('cv'));
-            viewer.setParameter('SceneUrl',         'my_model.obj');
-            viewer.setParameter('ModelColor',       '#CAA618');
-            viewer.setParameter('BackgroundColor1', '#E5D7BA');
-            viewer.setParameter('BackgroundColor2', '#383840');
-            viewer.setParameter('RenderMode',       'flat');
-            viewer.init();
-            viewer.update();
-        </script>
+     
+First lets load an object file saved from a simple Blender File.<br>
+The object file actually loads 2 files, a .obj file and a .mtl<br>
+
+        
+<canvas id="cv" width=500 height=400>
+</canvas>
+  
+<script type="text/javascript">
+  var viewer = new JSC3D.Viewer(document.getElementById('cv'));
+  viewer.setParameter('SceneUrl',         'blenderExportWavefrontObj.obj');
+  viewer.setParameter('ModelColor',       '#CAA618');
+  viewer.setParameter('BackgroundColor1', '#E5D7BA');
+  viewer.setParameter('BackgroundColor2', '#383840');
+  viewer.setParameter('RenderMode',       'flat');
+  viewer.init();
+  viewer.update();
+</script>
         
         
-        
-          <br><br><br> Blah, Blah, Blah <br><br><br>
-            <br><br><br> Blah, Blah, Blah <br><br><br>
-              <br><br><br> Blah, Blah, Blah <br><br><br>
-                <br><br><br> Blah, Blah, Blah <br><br><br>
-                  <br><br><br> Blah, Blah, Blah <br><br><br>
-                    <br><br><br> Blah, Blah, Blah <br><br><br>
-                      <br><br><br> Blah, Blah, Blah <br><br><br>
-                        <br><br><br> Blah, Blah, Blah <br><br><br>
+<br><br><br>Now lets try to load the same Blender object ssaved as a .stl 3d printer file<br><br><br>
                         
+<canvas id="cv2" width=500 height=400>
+   It seems you are using an outdated browser that does not support canvas :-(
+</canvas>
+  
+<script type="text/javascript">
+   var viewer2 = new JSC3D.Viewer(document.getElementById('cv2'));
+   viewer2.setParameter('SceneUrl',         'blenderExportStl.stl');
+   viewer2.setParameter('ModelColor',       '#CAA618');
+   viewer2.setParameter('BackgroundColor1', '#E5D7BA');
+   viewer2.setParameter('BackgroundColor2', '#383840');
+   viewer2.setParameter('RenderMode',       'flat');
+   viewer2.init();
+   viewer2.update();
+</script>
+        
+        
+  <br><br><br>Now lets try to load the same Blender object ssaved as a .3ds animation file<br><br><br>
                         
-        <canvas id="cv2" width=300 height=200>
-        It seems you are using an outdated browser that does not support canvas :-(
-        </canvas>
+<canvas id="cv3" width=500 height=400>
+   It seems you are using an outdated browser that does not support canvas :-(
+</canvas>
   
-  
-  
-        <script type="text/javascript">
-            var viewer2 = new JSC3D.Viewer(document.getElementById('cv2'));
-            viewer2.setParameter('SceneUrl',         'RugbyLineoutMaulYellow05.stl');
-            viewer2.setParameter('ModelColor',       '#CAA618');
-            viewer2.setParameter('BackgroundColor1', '#E5D7BA');
-            viewer2.setParameter('BackgroundColor2', '#383840');
-            viewer2.setParameter('RenderMode',       'flat');
-            viewer2.init();
-            viewer2.update();
-        </script>
+<script type="text/javascript">
+   var viewer3 = new JSC3D.Viewer(document.getElementById('cv3'));
+   viewer3.setParameter('SceneUrl',         'blenderExport3ds.3ds');
+   viewer3.setParameter('ModelColor',       '#CAA618');
+   viewer3.setParameter('BackgroundColor1', '#E5D7BA');
+   viewer3.setParameter('BackgroundColor2', '#383840');
+   viewer3.setParameter('RenderMode',       'flat');
+   viewer3.init();
+   viewer3.update();
+</script>
+        
+              
         
         
         
-        
-    </body>
+</body>
 </html>
