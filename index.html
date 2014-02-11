@@ -55,8 +55,24 @@ Notice here that the colours were defined by this App.
         
 
 
-
-
+Try from google Docs. You probably have to login first
+                        
+<canvas id="cv3" width=400 height=300>
+   It seems you are using an outdated browser that does not support canvas :-(
+</canvas>
+  
+<script type="text/javascript">
+   var viewer3 = new JSC3D.Viewer(document.getElementById('cv3'));
+   viewer3.setParameter('SceneUrl',         'https://docs.google.com/a/hpssapps.com/file/d/0B1F4g-x8k14YZGVjcWtUXzhmeHM/edit');
+   viewer3.setParameter('ModelColor',       '#CAA618');
+   viewer3.setParameter('BackgroundColor1', '#E5D7BA');
+   viewer3.setParameter('BackgroundColor2', '#383840');
+   viewer3.setParameter('RenderMode',       'flat');
+   viewer3.init();
+   viewer3.update();
+</script>
+        
+        
 
       
         
